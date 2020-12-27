@@ -1,0 +1,61 @@
+package logico;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Cliente implements Serializable{
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+private String nombre;
+  private String cedula;
+  private String dir;
+  private String pass;
+  private ArrayList<Prestamo> misPrestamos;
+  
+  
+  
+public Cliente(String nombre, String cedula, String pass, String dir) {
+	super();
+	this.nombre = nombre;
+	this.cedula = cedula;
+	this.dir = dir;
+	this.misPrestamos = new ArrayList<Prestamo>();
+}
+
+public String getPass() {
+	return pass;
+}
+
+public void setPass(String pass) {
+	this.pass = pass;
+}
+
+public String getNombre() {
+	return nombre;
+}
+public void setNombre(String nombre) {
+	this.nombre = nombre;
+}
+public String getCedula() {
+	return cedula;
+}
+public void setCedula(String cedula) {
+	this.cedula = cedula;
+}
+public String getDir() {
+	return dir;
+}
+public void setDir(String dir) {
+	this.dir = dir;
+}
+public ArrayList<Prestamo> getMisPrestamos() {
+	return misPrestamos;
+}
+public void setMisPrestamos(ArrayList<Prestamo> misPrestamos) {
+	this.misPrestamos = misPrestamos;
+}
+  
+  
+}
